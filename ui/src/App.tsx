@@ -37,7 +37,7 @@ function App() {
   const wsProtocol = protocol === "https:" ? "wss:" : "ws:";
 
   const actualHost = host.slice(-8)
-
+  console.log(protocol,host,wsProtocol,actualHost)
   const API_URL = `${protocol}//${actualHost}`;
   const WS_URL = `${wsProtocol}//${actualHost}`;
   
